@@ -21,7 +21,7 @@ type Activity struct {
 	Secrets       *Secrets    `json:"secrets,omitempty"`
 	Instance      bool        `json:"instance,omitempty"`
 	Flags         int         `json:"flags,omitempty"`
-	Buttons       *[2]Button  `json:"buttons,omitempty"`
+	Buttons       []Button    `json:"buttons,omitempty"`
 }
 
 type Timestamps struct {
@@ -54,8 +54,8 @@ type Secrets struct {
 }
 
 type Button struct {
-	Label string `json:"label"`
-	Url   string `json:"url"`
+	Label string `json:"label,omitempty"`
+	Url   string `json:"url,omitempty"`
 }
 
 type Payload struct {

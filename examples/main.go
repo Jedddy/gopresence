@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	gp, err := gopresence.New("CLIENT_ID")
+	gp, err := gopresence.New("1138035334375018658")
 
 	if err != nil {
 		log.Fatal(err)
@@ -31,13 +31,9 @@ func main() {
 				Size: [2]int{1, 10}, // size must be a two item array, [currentSize, maxSize]
 			},
 
-			Buttons: &[2]gopresence.Button{
+			Buttons: []gopresence.Button{
 				{
 					Label: "Button 1",
-					Url:   "https://pkg.go.dev/github.com/jedddy/gopresence",
-				},
-				{
-					Label: "Button 2",
 					Url:   "https://pkg.go.dev/github.com/jedddy/gopresence",
 				},
 			},
