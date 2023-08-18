@@ -56,7 +56,7 @@ func main() {
 				Size: [2]int{1, 10}, // size must be a two item array, [currentSize, maxSize]
 			},
 
-			Buttons: &[2]gopresence.Button{
+			Buttons: []gopresence.Button{ // maximum of 2 buttons
 				{
 					Label: "Button 1",
 					Url:   "https://pkg.go.dev/github.com/jedddy/gopresence",
